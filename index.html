@@ -50,8 +50,11 @@
             </video>
             
              <a-marker preset="hiro">
-  <a-video src="video/marcador.webm" width="3" height="3" position="0 0 0"></a-video>
-          <a-plane position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#vid' controls></a-plane>
+ <a-entity id="marcador" rotation="0 45 0"> <a-video src="video/marcador.webm" width="3" height="3" position="0 0 0"></a-video>
+          
+          <a-plane position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#vid' controls></a-plane></a-entity>
+                 
+                 
         </a-marker>
         <a-entity camera></a-entity>
             
@@ -60,6 +63,9 @@
             <a-plane position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#vid' controls></a-plane>
         </a-marker>
         <a-entity camera></a-entity>-->
+        
+        
+
         
         
         
