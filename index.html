@@ -46,20 +46,20 @@
         <a-assets>
             
             
-           <a-marker preset="hiro"> 
+            
          <video preload="auto" id="vid" poster="THUMBNAIL" response-type="arraybuffer" loop="false" crossorigin webkit-playsinline playsinline controls>
-              <source  src="video/marcador.webm">
-              <!-- <img src="ANY IMAGE PATH (THUMBNAIL)"> Your browser does not support Or Else Please Click Reset Button.-->
+              <source  src="video/marcador.webm"
+               <img src="ANY IMAGE PATH (THUMBNAIL)"> Your browser does not support Or Else Please Click Reset Button.
             </video>
-            </a-marker>
-        <a-entity camera></a-entity>
+            
+        
        
         
-        
-<!--  <a-video src="video/marcador.webm" width="3" height="3" position="0 0 0"></a-video>
-          <a-plane position='0 0 0' rotation="0 0 0" material='transparent:true;src:#vid' controls></a-plane>-->
-        
-        
+        <a-marker preset="hiro">
+  <a-video src="video/marcador.webm" width="3" height="3" position="0 0 0"></a-video>
+          <a-plane position='0 0 0' rotation="0 0 0" material='transparent:true;src:#vid' controls></a-plane>
+        </a-marker>
+        <a-entity camera></a-entity>
            
         
         </a-assets>
