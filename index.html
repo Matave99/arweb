@@ -44,18 +44,21 @@
 <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 60; canvasWidth: 200; canvasHeight: 200'>
         <a-assets>
-            <video preload="auto" id="vid" poster="THUMBNAIL" response-type="arraybuffer" loop="false" crossorigin webkit-playsinline playsinline controls>
-                <source  src="video/vid.webm">
-              <!-- k <img src="ANY IMAGE PATH (THUMBNAIL)"> Your browser does not support Or Else Please Click Reset Button.-->
-            </video>
-        </a-assets>
-       <a-scene id="marcador">
+            
+            <a-scene id="marcador">
         <a-marker preset="hiro">
   <a-video src="video/marcador.webm" width="3" height="3" position="0 0 0"></a-video>
           <a-plane position='0 0 0' rotation="0 0 0" material='transparent:true;src:#vid' controls></a-plane>
         </a-marker>
         <a-entity camera></a-entity>
            </a-scene>
+            
+           <!-- <video preload="auto" id="vid" poster="THUMBNAIL" response-type="arraybuffer" loop="false" crossorigin webkit-playsinline playsinline controls>
+                <source  src="video/marcador.webm">
+              k <img src="ANY IMAGE PATH (THUMBNAIL)"> Your browser does not support Or Else Please Click Reset Button.
+            </video>-->
+        </a-assets>
+       
     </a-scene>
     <div class="footer">
         <div class="row">
